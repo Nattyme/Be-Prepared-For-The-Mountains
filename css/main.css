@@ -322,10 +322,50 @@ body {
     color: rgb(255, 255, 255, 0.5)
 }
 
+.footer-nav-wrapper {
+    display: flex;
+}
+
 .footer-nav {
+    max-width: 200px;
+}
+
+.footer-nav + .footer-nav {
+    margin-left: 212px;
 }
 
 .footer-nav-title {
+    margin: 0;
+    margin-bottom: 24px;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.33; /* 133.333% */
+    color:  #FBD784;
 }
+
+
+.footer-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-nav li {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.77; /* 177.778% */
+}
+
+.footer-nav li + li {
+    margin-top: 16px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
 
 
