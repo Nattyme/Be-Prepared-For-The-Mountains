@@ -288,16 +288,24 @@ body {
     padding-bottom: 120px;
 }
 
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .footer-copyright {
 }
 
 .footer-copyright-logo {
+    margin-bottom: 24px;
 }
 
 .logo {
 }
 
 .footer-copyright-desc {
+    margin-bottom: 122px;
 }
 
 .footer-copyright-terms {
