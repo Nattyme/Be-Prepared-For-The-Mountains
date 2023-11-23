@@ -277,10 +277,35 @@ body {
 }
 
 .article-img {
+    display: block; 
     width: 566px;
     height: 720px;
 }
 
 /* footer */
+
+.footer {
+    padding-bottom: 120px;
+}
+
+.footer-copyright {
+}
+
+.footer-copyright-logo {
+}
+
+.logo {
+}
+
+.footer-copyright-desc {
+}
+
+.footer-copyright-terms {
+}
+.footer-nav {
+}
+
+.footer-nav-title {
+}
 
 
