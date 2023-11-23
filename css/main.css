@@ -183,6 +183,10 @@ body {
     align-items: center;
 }
 
+.article + * {
+    padding-top: 200px;
+}
+
 .article-text {
     position: relative;
     padding-left: 150px;
