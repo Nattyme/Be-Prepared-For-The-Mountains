@@ -38,6 +38,10 @@ body {
     padding-top: 64px;
 }
 
+.nav {
+    margin-bottom: 198px;
+}
+
 .logo {
     font-family: 'Playfair Display', serif;
     font-size: 32px;
@@ -47,12 +51,12 @@ body {
     
 }
 
-.nav {
+.nav-menu {
     font-weight: 700;
     font-size: 18px;
 }
 
-.nav ul {
+.nav-menu ul {
     display: flex;
     font-style: none;
     margin: 0;
@@ -61,17 +65,17 @@ body {
     list-style-type: none;
 }
 
-.nav li + li {
+.nav-menu li + li {
     margin-left: 40px;
 }
 
-.nav a {
+.nav-menu a {
     color: #fff;
     text-decoration: none;
     transition: color 0.2s ease-in;
 }
 
-.nav a:hover {
+.nav-menu a:hover {
     color: #FBD784;
 }
 
@@ -80,7 +84,7 @@ body {
     font-weight: 700;
     text-decoration: none;
     color:  #fff;
-    
+
     transition: color 0.2s ease-in;
 }
 
@@ -88,3 +92,79 @@ body {
 .account a:hover {
     color: #FBD784;
 }
+
+/* hero */
+
+.hero {
+    display: block;
+    max-width: 980px;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-decoration: none;
+    transition: transform 0.2s ease-in;
+}
+
+.hero:hover {
+    transform: translateY(-5%);
+}
+
+.hero-category {
+    margin-bottom: 32px;
+    position: relative;
+    padding-left: 104px;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.222;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #FBD784;
+}
+
+.hero-category::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    content: "";
+    width: 72px;
+    height: 2px;
+    background-color:#FBD784;
+}
+
+.hero-title {
+    margin-bottom: 32px;
+    font-family: 'Playfair Display', serif;
+    font-size: 88px;
+    font-weight: 500;
+    line-height: 1.136;
+    text-transform: capitalize;
+    color: #fff;
+
+}
+
+.hero-scroll {
+    display: inline-block;
+    position: relative;
+    padding-right: 32px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.222;
+    color: #fff;
+}
+
+.hero-scroll::after {
+    content: "";
+    display: block;
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    width: 16px;
+    height: 24px;
+
+    background-image: url("./../img/icons/arrow-down.svg");
+}
+
