@@ -291,10 +291,11 @@ body {
 .footer-row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .footer-copyright {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-copyright-logo {
@@ -305,11 +306,22 @@ body {
 }
 
 .footer-copyright-desc {
-    margin-bottom: 122px;
+    margin: 0;
+    max-width: 303px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.78;
 }
 
 .footer-copyright-terms {
+    margin: 0;
+    margin-top: auto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.777; 
+    color: rgb(255, 255, 255, 0.5)
 }
+
 .footer-nav {
 }
 
