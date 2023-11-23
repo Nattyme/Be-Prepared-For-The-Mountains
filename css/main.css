@@ -36,6 +36,7 @@ body {
 
 .header {
     padding-top: 64px;
+    padding-bottom: 843px;
 }
 
 .nav {
@@ -167,4 +168,13 @@ body {
 
     background-image: url("./../img/icons/arrow-down.svg");
 }
+
+/* main*/
+
+.container {
+    max-width: 1492px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 
