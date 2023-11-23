@@ -178,19 +178,21 @@ body {
 }
 
 .article {
+    margin-bottom: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.article + * {
-    padding-top: 200px;
-}
 
 .article-text {
     position: relative;
     padding-left: 150px;
     max-width: 782px;
+}
+
+.article:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 .article-text::before {
