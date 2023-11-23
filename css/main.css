@@ -358,12 +358,40 @@ body {
 }
 
 .footer-nav li + li {
-    margin-top: 16px;
+    margin-top: 11px;
 }
 
 .footer-nav a {
+    padding-bottom: 5px;
+    position: relative;
     text-decoration: none;
     color: #fff;
+}
+
+.footer-nav a::after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    opacity: 0;
+}
+
+.footer-nav a:hover::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    opacity: 1;
+
+    transition: all 0.2s ease-in;
 }
 
 
