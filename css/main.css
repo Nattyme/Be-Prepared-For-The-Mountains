@@ -151,6 +151,11 @@ body {
     background: none;
 }
 
+.nav-button:focus,
+.nav-button:active {
+    outline: none;
+}
+
 .nav-button-icon {
     position: relative;
     display: block;
@@ -180,6 +185,19 @@ body {
     width: 42px;
     height: 5px;
     background-color: #fff;
+}
+
+.nav-button-close .nav-button-icon {
+    background-color: transparent;
+}
+
+.nav-button-close .nav-button-icon::before {
+    transform: rotate(45deg);
+}
+
+.nav-button-close .nav-button-icon::after {
+    top: -10px;
+    transform: rotate(135deg);
 }
 
 .mobile-nav {
