@@ -292,6 +292,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     line-height: 1.222;
+    text-decoration: none;
     color: #FBD784;
 }
 
@@ -308,6 +309,24 @@ body {
     height: 16px;
 
     background-image: url("./../img/icons/arrow-right.svg");
+}
+
+.article-read-more:hover::after {
+    animation: arrow 0.5s ease-in-out;
+}
+
+@keyframes arrow {
+    0% {
+        right: 0;
+    }
+
+    50% {
+        right: -5px;
+    }
+
+    100% {
+        right: 0;
+    }
 }
 
 .article-img {
