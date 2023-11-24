@@ -102,19 +102,32 @@ body {
 
 
 .account {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
     font-size: 17px;
     font-weight: 700;
     text-decoration: none;
     color:  #fff;
 
-    transition: color 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
+.account svg path {
+    fill: #fff;
+    transition: all 0.2s ease-in;
+}
 
-.account a:hover {
+.account:hover,
+.account:hover svg path{
     color: #FBD784;
+    fill: #FBD784;
 }
 
+.account p {
+    display: inline-block;
+    margin: 0;
+}
 /* hero */
 
 .hero {
