@@ -15,4 +15,8 @@ main, .footer {
     .nav-button {
         display: block;
     }
+
+    .mobile-nav {
+        display: flex;
+    }
 }

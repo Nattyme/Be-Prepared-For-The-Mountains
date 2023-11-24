@@ -140,6 +140,8 @@ body {
 }
 
 .nav-button {
+    position: relative;
+    z-index: 9;
     display: none;
     height: 25px;
     border: none;
@@ -178,6 +180,38 @@ body {
     width: 42px;
     height: 5px;
     background-color: #fff;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    
+    width: 320px;
+    height: 100%;
+
+    padding: 70px 70px 50px 30px;
+
+    background-color: rgba(44, 83, 99, 0.8);
+}
+
+.mobile-nav .nav-menu,
+.mobile-nav .account {
+    display: flex;
+}
+
+.mobile-nav .nav-menu ul {
+    flex-direction: column;
+}
+
+.mobile-nav .nav-menu ul li {
+    margin: 0;
+    margin-bottom: 25px;
 }
 /* hero */
 .hero {
