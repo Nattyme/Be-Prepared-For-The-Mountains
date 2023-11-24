@@ -5,6 +5,10 @@ font-family: 'Playfair Display', serif;*/
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
 /* base*/
 
 body {
@@ -134,8 +138,48 @@ body {
     display: inline-block;
     margin: 0;
 }
-/* hero */
 
+.nav-button {
+    display: none;
+    height: 25px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    background: none;
+}
+
+.nav-button-icon {
+    position: relative;
+    display: block;
+    width: 42px;
+    height: 5px;
+    border: none;
+    background-color: #fff;
+}
+
+.nav-button-icon::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: "";
+    display: block;
+    width: 42px;
+    height: 5px;
+    background-color: #fff;
+}
+
+.nav-button-icon::after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: "";
+    display: block;
+    width: 42px;
+    height: 5px;
+    background-color: #fff;
+}
+/* hero */
 .hero {
     display: block;
     max-width: 980px;
@@ -245,16 +289,6 @@ body {
     align-items: center;
 }
 
-.article-link {
-    z-index: 1;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
 .article-text {
     position: relative;
     padding-left: 150px;
@@ -306,6 +340,7 @@ body {
 }
 
 .article-title {
+    max-width: 555px;
     margin-bottom: 27px;
     font-family: 'Playfair Display', serif;
     font-size: 64px;
@@ -347,8 +382,8 @@ body {
     background-image: url("./../img/icons/arrow-right.svg");
 }
 
-.article:hover .article-read-more::after {
-    animation: arrow-right 0.5s ease-in-out;
+.article-text:hover .article-read-more::after {
+    animation: arrow-right 0.6s ease-in-out;
 }
 
 @keyframes arrow-right {
@@ -365,11 +400,22 @@ body {
     }
 }
 
+.article-link {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .article-img {
     display: block; 
     width: 566px;
     height: 720px;
 }
+
+
 
 /* footer */
 
@@ -389,9 +435,6 @@ body {
 
 .footer-copyright-logo {
     margin-bottom: 24px;
-}
-
-.logo {
 }
 
 .footer-copyright-desc {

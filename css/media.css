@@ -1,0 +1,18 @@
+main, .footer {
+    display: none;
+}
+
+.hero {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .nav-menu,
+    .account {
+        display: none;
+    }
+
+    .nav-button {
+        display: block;
+    }
+}
