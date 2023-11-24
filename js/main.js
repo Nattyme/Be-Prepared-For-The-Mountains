@@ -4,4 +4,5 @@ const navMobile = document.querySelector('.mobile-nav');
 
 navBtn.addEventListener('click', function(){
     navMobile.classList.toggle('mobile-nav-active');
+    navBtn.classList.toggle('nav-button-close');
 });
