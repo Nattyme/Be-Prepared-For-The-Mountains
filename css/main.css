@@ -23,6 +23,12 @@ body {
     margin: 0 auto;
 }
 
+.container {
+    max-width: 1492px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .row {
     display: flex;
     align-items: center;
@@ -143,6 +149,10 @@ body {
     transform: translateY(-5%);
 }
 
+.hero:hover .hero-scroll::after {
+    animation: arrow-down 0.8s ease-out;
+}
+
 .hero-category {
     margin-bottom: 32px;
     position: relative;
@@ -203,14 +213,30 @@ body {
     background-image: url("./../img/icons/arrow-down.svg");
 }
 
-/* main*/
 
-.container {
-    max-width: 1492px;
-    margin: 0 auto;
-    padding: 0 15px;
+@keyframes arrow-down {
+    0% {
+        top: 50%;
+    }
+
+    15% {
+        top: 20%;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    85% {
+        top: 70%;
+    }
+
+    100% {
+        top: 50%;
+    }
 }
 
+/* main*/
 .article {
     margin-bottom: 200px;
     display: flex;
@@ -312,16 +338,16 @@ body {
 }
 
 .article-read-more:hover::after {
-    animation: arrow 0.5s ease-in-out;
+    animation: arrow-right 0.5s ease-in-out;
 }
 
-@keyframes arrow {
+@keyframes arrow-right {
     0% {
         right: 0;
     }
 
     50% {
-        right: -5px;
+        right: -10px;
     }
 
     100% {
