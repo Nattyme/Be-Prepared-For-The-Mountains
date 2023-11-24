@@ -16,7 +16,7 @@ main, .footer {
         display: block;
     }
 
-    .mobile-nav {
+    .mobile-nav-active {
         display: flex;
     }
 }
