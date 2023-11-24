@@ -2,8 +2,10 @@ main, .footer {
     display: none;
 }
 
-.hero {
-    display: none;
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 68px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -12,11 +14,28 @@ main, .footer {
         display: none;
     }
 
+    .nav {
+        margin-bottom: 90px;
+    }
+
     .nav-button {
         display: block;
     }
 
     .mobile-nav-active {
         display: flex;
+    }
+
+    .hero-title {
+        font-size: 38px;
+    }
+
+    .hero-category::before {
+        width: 42px;
+    }
+
+    .hero-category {
+        font-size: 14px;
+        padding-left: 62px;
     }
 }
