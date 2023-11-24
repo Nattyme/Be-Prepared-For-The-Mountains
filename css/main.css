@@ -238,10 +238,20 @@ body {
 
 /* main*/
 .article {
+    position: relative;
     margin-bottom: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.article-link {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -304,7 +314,7 @@ body {
     color: #fff;
 }
 
-.article-text p {
+.article-desc {
     font-size: 18px;
     font-weight: 700;
     line-height: 1.777; 
@@ -312,13 +322,13 @@ body {
 }
 
 .article-read-more  {
+    margin: 0;
     display: inline-block;
     position: relative;
     padding-right: 40px;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.222;
-    text-decoration: none;
     color: #FBD784;
 }
 
@@ -337,7 +347,7 @@ body {
     background-image: url("./../img/icons/arrow-right.svg");
 }
 
-.article-read-more:hover::after {
+.article:hover .article-read-more::after {
     animation: arrow-right 0.5s ease-in-out;
 }
 
