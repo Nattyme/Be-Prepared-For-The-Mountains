@@ -9,6 +9,11 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 /* base*/
 
 body {
@@ -345,6 +350,7 @@ body {
 .article-text {
     position: relative;
     padding-left: 150px;
+    margin-right: 20px;
     max-width: 782px;
 }
 
@@ -461,14 +467,6 @@ body {
     width: 100%;
     height: 100%;
 }
-
-.article-img {
-    display: block; 
-    width: 566px;
-    height: 720px;
-}
-
-
 
 /* footer */
 
