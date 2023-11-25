@@ -16,14 +16,8 @@ img {
 
 /* base*/
 
-body {
-    margin: 0;
-    font-family: 'Gilroy';
-    background-color: #0B1D26;
-    background-image: url("./../img/bg/bg.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    color:  #fff;
+.no-scroll {
+    overflow-y: hidden;
 }
 
 .container-wide  {
@@ -45,6 +39,16 @@ body {
 
 .space-between {
     justify-content: space-between;
+}
+
+body {
+    margin: 0;
+    font-family: 'Gilroy';
+    background-color: #0B1D26;
+    background-image: url("./../img/bg/bg.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color:  #fff;
 }
 
 /* header*/
@@ -208,6 +212,7 @@ body {
 
 .mobile-nav {
     position: fixed;
+    z-index: 8;
     top: 0;
     right: 0;
 
@@ -221,7 +226,7 @@ body {
 
     padding: 70px 70px 50px 30px;
 
-    background-color: rgba(44, 83, 99, 0.8);
+    background-color: rgba(11, 29, 38, 0.8);
 }
 
 .mobile-nav .nav-menu,
